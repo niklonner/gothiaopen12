@@ -1,5 +1,10 @@
 <?php
 
+// Yes, the files /globals.php.example and db/globals.php.example are
+// copies of the same file. Yes, it is stupid. I don't remember why
+// this is so but it was probably some late night quick fix for some 
+// include problem...
+
 $globdbUser = "db_user_name";
 $globdbPassword = "db_user_password";
 $globdbHost = "db_host";
