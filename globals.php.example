@@ -1,0 +1,24 @@
+<?php
+
+$globdbUser = "db_user_name";
+$globdbPassword = "db_user_password";
+$globdbHost = "db_host";
+$globdbName = "db_name";
+$globSalt = "salt_for_passwords";
+
+$globMailHeader = "From: Gothia Open no-reply <no-reply@gopen.teamgothiabc.se>";
+$globMailReceivers = "niklas_lonnerfors@yahoo.se";
+$globMailTag = "[Gothia Open AUTO] ";
+
+$globAdminName = "admin_login";
+$globAdminPassword = "admin_password";
+
+$globCaptchaPrivKey = "private recaptcha key";
+$globCaptchaPublKey = "public recaptcha key";
+
+$globPrizeDistribution = array();
+$globPrizeDistribution[] = array(50, 25, 12.5, 8.33, 4.17);
+$globPrizeDistribution[] = array(47.5, 24, 12, 8, 4.5, 4);
+$globPrizeDistribution[] = array(46, 22.5, 11, 7.5, 4.75, 4.25, 4);
+
+?>
