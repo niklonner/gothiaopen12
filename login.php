@@ -1,11 +1,13 @@
 <?php
     require('globals.php');
+    require('db/dbfuncs.php');
 
     $faulty = FALSE;
 
     if ($_POST['username'] == $globAdminName && $_POST['password']==$globAdminPassword) {
         session_start();
-        $_SESSION['auth'] = sha1("admin" . $globSalt);
+        $_SESSION['timestamp'] = getSETime()->format('YmdHis');
+        $_SESSION['auth'] = sha1("admin" . $globSalt . $_SESSION['timestamp']);
         header('Location: loggedin.php');
         die();
     } else if (isset($_POST['username'])) {
