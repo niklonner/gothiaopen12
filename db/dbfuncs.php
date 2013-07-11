@@ -695,8 +695,3 @@ function verifyPassword($id,$trypassword) {
 }
 
 ?>
-
-
-
-
-

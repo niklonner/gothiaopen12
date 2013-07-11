@@ -1,8 +1,9 @@
 <?php
-require('globals.php');
+require_once('globals.php');
 
 function isLoggedIn() {
-    return $_SESSION['auth'] == sha1("admin" . $globSalt . $_SESSION['timestamp']);
+    global $globSalt;
+    return $_SESSION['auth'] == sha1($globSalt . $_SESSION['timestamp']);
 }
 
 function defaultCheckLoggedIn() {

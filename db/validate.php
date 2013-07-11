@@ -68,4 +68,3 @@ function verify_start($string) {
 }
 
 ?>
-
