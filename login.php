@@ -5,7 +5,7 @@
 
     if ($_POST['username'] == $globAdminName && $_POST['password']==$globAdminPassword) {
         session_start();
-        $_SESSION['auth'] = "ok";
+        $_SESSION['auth'] = sha1("admin" . $globSalt);
         header('Location: loggedin.php');
         die();
     } else if (isset($_POST['username'])) {
